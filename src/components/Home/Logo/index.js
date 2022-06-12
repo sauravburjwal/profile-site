@@ -1,35 +1,23 @@
 import './index.scss'
 import LogoS from '../../../assets/images/logo-s.png'
-import { useEffect, useRef } from 'react'
-import gsap from 'gsap-trial';
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin';
+import { useEffect} from 'react'
 
 const Logo = () => {
-  const bgRef = useRef();
-  const outlineLogoRef = useRef();
-  const solidLogoRef = useRef();
+
+  
 
   useEffect(() => {
-    gsap.registerPlugin(DrawSVGPlugin)
-
-    gsap.timeline()
-    .to(bgRef.current,{
-      duration:1,
-      opacity:1
-    }).from(outlineLogoRef.current,{
-      drawSVG:0,
-      duration:20,
-    })
-
-    gsap.fromTo(
-      solidLogoRef.current,{opacity:0,},{opacity:1,delay:4,duration:4,}
-    )
-    
+    setTimeout(()=>{
+      document.querySelector('.solid-logo').classList.add('displayS')
+    }, 3000) ;
+    setTimeout(()=>{
+      document.querySelector('.solid-logo').classList.add('opacityMax')
+    }, 7000)  ;  
   },[])
 
   return (
-    <div className='logo-container' ref={bgRef}>
-      <img src={LogoS} alt="S" ref={solidLogoRef} className='solid-logo' />
+    <div className='logo-container'>
+      <img src={LogoS} alt="S" className='solid-logo' />
       <svg 
         xmlns="http://www.w3.org/2000/svg"
         width="559pt" 
@@ -38,7 +26,7 @@ const Logo = () => {
         <g className='svg-container'
          transform="translate(0 897) scale(0.1,-0.1)"
          fill="none">
-        <path ref={outlineLogoRef} d="M2930 8959 c-344 -16 -623 -85 -915 -228 -231 -114 -406 -241 -600
+        <path  d="M2930 8959 c-344 -16 -623 -85 -915 -228 -231 -114 -406 -241 -600
         -436 -61 -60 -145 -137 -188 -169 -432 -325 -715 -757 -806 -1230 -109 -564
         21 -1117 384 -1641 250 -360 780 -877 1547 -1511 451 -373 600 -505 803 -708
         215 -216 275 -293 350 -448 55 -114 75 -188 82 -298 6 -96 -6 -173 -39 -257

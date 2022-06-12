@@ -8,7 +8,7 @@
     bottom: 0;
     left: auto;
     margin: auto;
-    opacity: 0;
+    opacity: 1;
 
     svg{
         width: 100%;
@@ -34,4 +34,24 @@
 .svg-container{
     stroke: #ffd700;
     stroke-width: 10px;
+}
+
+.displayS {
+    animation-name: displayS;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
+    animation-duration: 4s;
+}
+
+.opacityMax {
+    opacity: 1 !important ;
+}
+
+@keyframes displayS {
+    0% {
+        opacity: 0 ;
+    }   
+    100% {
+        opacity: 1;
+    } 
 }
