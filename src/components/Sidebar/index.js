@@ -29,21 +29,21 @@ const Sidebar = () => (
         <ul>
             <li>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a herf="https://www.linkedin.com" target= "_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com" target= "_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e'/>
 
                 </a>
             </li>
             <li>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a herf="https://www.github.com" target= "_blank" rel="noreferrer">
+                <a href="https://www.github.com" target= "_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faGithub} color='#4d4d4e'/>
 
                 </a>
             </li>
             <li>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a herf="https://www.instagram.com" target= "_blank" rel="noreferrer">
+                <a href="https://www.instagram.com" target= "_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faInstagram} color='#4d4d4e'/>
 
                 </a>
