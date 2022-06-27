@@ -1,10 +1,34 @@
 import Loader from 'react-loaders'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_yuj0nfj',
+        'template_9hklrop',
+        form.current,
+        'jxtjpx-8JQj8I6loU'
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
+
+    e.target.reset()
+  }
   const [letterClass, setLetterClass] = useState('text-animate')
   useEffect(() => {
     setTimeout(() => {
@@ -28,7 +52,7 @@ const Contact = () => {
             don't hesitate to contact me using below form either.
           </p>
           <div className="contact-form">
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input type="text" name="name" placeholder="Name" required />
