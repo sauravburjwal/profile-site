@@ -8,15 +8,15 @@
     },
     {
       "cover": "/portfolio/portfolio2.png",
-      "title": "Forkify-App",
-      "description": "HTML, Vanilla JS, CSS",
-      "url": "https://saurav-forkify.netlify.app/"
+      "title": "Expense Tracker",
+      "description": "React, Speechly, CSS",
+      "url": "https://saurav-expense-tracker.netlify.app/"
     },
     {
       "cover": "/portfolio/portfolio3.png",
-      "title": "Bankist App",
+      "title": "Photography Portfolio Site",
       "description": "HTML, Vanilla JS, CSS",
-      "url": "https://saurav-bankist-application.netlify.app/"
+      "url": "https://saurav-photography-portfolio-site.netlify.app/"
     },
     {
       "cover": "/portfolio/portfolio4.png",
@@ -29,6 +29,12 @@
       "title": "Omnifood",
       "description": "HTML, CSS",
       "url": "https://saurav-omnifood-site.netlify.app/"
+    },
+    {
+      "cover": "/portfolio/portfolio6.png",
+      "title": "Portfolio-Site",
+      "description": "React, JSX, CSS",
+      "url": "https://saurav-portfolio-website.netlify.app/"
     }
   ]
 }
