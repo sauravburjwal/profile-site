@@ -14,9 +14,9 @@
     },
     {
       "cover": "/portfolio/portfolio3.png",
-      "title": "Photography Portfolio Site",
-      "description": "HTML, Vanilla JS, CSS",
-      "url": "https://saurav-photography-portfolio-site.netlify.app/"
+      "title": "Youtube Clone App",
+      "description": "React, RapidAPI, Material UI",
+      "url": "https://saurav-youtube-clone.netlify.app/"
     },
     {
       "cover": "/portfolio/portfolio4.png",
@@ -26,9 +26,9 @@
     },
     {
       "cover": "/portfolio/portfolio5.png",
-      "title": "Omnifood",
-      "description": "HTML, CSS",
-      "url": "https://saurav-omnifood-site.netlify.app/"
+      "title": "Forkify",
+      "description": "HTML, CSS, JavaScript",
+      "url": "https://saurav-forkify.netlify.app/"
     },
     {
       "cover": "/portfolio/portfolio6.png",
